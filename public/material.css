@@ -96,6 +96,9 @@
 
 .img-container--center {
   border-radius: 10px;
+  background: linear-gradient(-45deg, #ffffff, #f3f3f3, #c5c5c5, #bbbbbb);
+  background-size: 400% 400%;
+  animation: gradient 4s ease infinite;
   overflow: hidden;
 }
 
