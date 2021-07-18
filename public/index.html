@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./index.js"></script>
+  <title>My Demo</title>
+</head>
+
+<body id="body">
+  <div class="display-flex flex-direction--column min-h--100">
+    <header class="app-container header display-flex align-item--center pd-tb--10">
+      <div class="header_logo flex-1" onclick="toHomePage()">
+        <img class="header_logo__img" src="./favicon.ico" alt="logo" />
+      </div>
+      <nav id="app-nav" class="header_nav">
+        <a class="header_nav__link" data-src="./gallery/gallery.html" data-title="My Gallery">Gallery</a>
+        <a class="header_nav__link" data-src="./blog/blog.html" data-title="My Blog">Blog</a>
+      </nav>
+      <div class="flex-1 display-flex align-item--center justify-content--end">
+        <div class="mg-r--10" onclick="changeTheme()">
+          <abbr title="Change Theme">
+            <div id="moon" class="moon">
+              <div class="sun"></div>
+            </div>
+          </abbr>
+        </div>
+        <div class="header_account header_logo">
+          <abbr title="Your Account">
+            <img class="header_logo__img" src="image/avatar/doggo.png" alt="avatar" />
+          </abbr>
+        </div>
+      </div>
+    </header>
+    <main class="app-container flex-1 pd-tb--10">
+      <div id="app"></div>
+    </main>
+    <footer class="app-container footer pd-tb--10">
+      PROJECT T<br />
+      Capstone Project: Web Design for Everybody
+    </footer>
+  </div>
+</body>
+
+</html>
