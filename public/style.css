@@ -37,13 +37,13 @@ a:hover {
 .header .header_logo {
   width: 1.5rem;
   height: 1.5rem;
-  cursor: pointer;
 }
 
 .header .header_logo .header_logo__img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .header .header_nav {
