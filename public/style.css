@@ -4,6 +4,7 @@
 @import "./material.css";
 @import "./blog/blog.css";
 @import "./gallery/gallery.css";
+@import "./map/map.css";
 
 body {
   padding: 0;

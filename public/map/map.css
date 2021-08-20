@@ -1,0 +1,23 @@
+.map__btn {
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  transition: 0.2s ease-in-out;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.map__btn:hover {
+  color: #fff;
+  background-color: var(--active-color);
+}
+
+.google-map {
+  height: 70vh;
+  width: 100%;
+  border: 0;
+}

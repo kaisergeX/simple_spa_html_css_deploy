@@ -18,7 +18,7 @@ const navDirect = document.querySelectorAll("#app-nav .header_nav__link");
 const arrayNavDirect = Object.assign(navDirect);
 
 // Change style for current active navbar link element.
-const handleActiveNav = currIndex => {
+const handleActiveNav = (currIndex) => {
   arrayNavDirect[previousComponent].classList.remove("active-link");
   arrayNavDirect[currIndex].classList.add("active-link");
   previousComponent = currIndex;
@@ -73,6 +73,12 @@ const changeTheme = () => {
   }
   body.classList.add(themePool[currTheme]);
   if (themeSwitcher[currTheme]) moon.classList.add(themeSwitcher[currTheme]);
+};
+
+const changeLocation = (coordinate) => {
+  document.getElementById(
+    "map"
+  ).src = `https://www.google.com/maps?q=${coordinate}&output=embed`;
 };
 
 SPASimulator();
